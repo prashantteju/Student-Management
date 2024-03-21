@@ -1,0 +1,122 @@
+<app-header></app-header>
+<div class="container" Id="User-data">
+    <div class="card">
+        <div class="row m-4">
+            <div class="col" *ngIf="isRole">
+                <div class="card">
+                    <div class="card-body">
+                        <a [routerLink]="['/sing-in']" [ngClass]="isRole?'col2':'col1'">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center p-0">
+                                    <h4 class="card-title custom-title"><i class="fa fa-book"
+                                            aria-hidden="true"></i>Student
+                                        User</h4>
+                                </div>
+                            </div>
+                            <span class="h1 card-text">{{Studentlogin}}</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- <span class="h1 card-text">{{ArticlesReceived}}</span> -->
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a [routerLink]="['/sudent-info']">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center p-0">
+                                    <h4 class="card-title custom-title"><i class="fa fa-book"
+                                            aria-hidden="true"></i>Registered
+                                        student</h4>
+                                </div>
+                            </div>
+                            <span class="h1 card-text">{{studentcount}}</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- <span class="h1 card-text">{{ArticlesInprocess}}</span> -->
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <div class="card-body">
+                        <a [routerLink]="['/newstudent']">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center p-0">
+                                    <h4 class="card-title custom-title"><i class="fa fa-thumbs-up"
+                                            aria-hidden="true"></i>Registration Form</h4>
+                                </div>
+                                <!-- <img src="https://cdn4.vectorstock.com/i/1000x1000/78/58/male-graduate-student-profile-icon-with-gown-vector-44667858.jpg"
+                        style="    height: 47%;
+                width: 31%;
+                margin-left: 7em;"> -->
+                            </div>
+
+                            <span class="h1 card-text"><i class="fa fa-pencil-square-o"
+                                    style="font-size:24px"></i></span>
+                            <!-- <span class="h1 card-text">{{ArticlesApproved}}</span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a [routerLink]="['/student-login']">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center p-0">
+                                    <h4 class="card-title custom-title"><i class="fa fa-book"
+                                            aria-hidden="true"></i>Student Result</h4>
+                                </div>
+                            </div>
+                            <span class="h1 card-text">{{0}}</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- <span class="h1 card-text">{{ArticlesInprocess}}</span> -->
+            </div>
+            <div class="row mt-4 ml-1" *ngIf="isRole">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <a [routerLink]="['/add-student-result']">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center p-0">
+                                        <h4 class="card-title custom-title"><i class="fa fa-book"
+                                                aria-hidden="true"></i>Add Student Result</h4>
+                                    </div>
+                                </div>
+                                <span class="h1 card-text">{{studentcount}}</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <span class="h1 card-text">{{ArticlesInprocess}}</span> -->
+                </div>
+
+                <div class="col" *ngIf="isRole">
+                    <div class="card">
+                        <div class="card-body">
+                            <a (click)="doSomething($event)">
+                                <div class="row">
+                                    <div class="col d-flex justify-content-center p-0">
+                                        <h4 class="card-title custom-title"><i class="fa fa-book"
+                                                aria-hidden="true"></i>Add Teachers</h4>
+                                    </div>
+                                </div>
+                                <span class="h1 card-text">{{studentcount}}</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <span class="h1 card-text">{{ArticlesInprocess}}</span> -->
+                </div>
+                
+            </div>
+
+            <div class="dyp mt-2">
+                <img
+                    src="https://mir-s3-cdn-cf.behance.net/projects/404/13b6fa62885689.Y3JvcCw3MTksNTYzLDIzNiwxNDA.png" (click)="logout($event)" [routerLink]="['/front-page']">
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

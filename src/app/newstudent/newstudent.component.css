@@ -1,0 +1,15 @@
+.fieldset{
+    background-color: whitesmoke;
+}
+.card{
+    padding-left: 8em;
+    margin-left: 4em;
+}
+.row{
+    background-color: aliceblue;
+    /* background-image:url("https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80"); */
+}
+.submit{
+background-color: rgb(81, 82, 88);
+color: white;
+}

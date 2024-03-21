@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="container">
+   
+    <div class="mt-2 mb-4">
+        <hr class="hr">
+        <div class="col-3"> 
+            <!-- <mat-form-field>
+                <input matInput type="search" placeholder="Search" aria-label="Search" id="search" [(ngModel)]="namesearch  ">
+              </mat-form-field> -->
+        </div>
+        <div class="card">
+            <div class="card-body">
+                
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr class="tb-white">
+                            <th>SrNo</th>
+                            <th>RollNo</th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>status</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tb-grey" *ngFor="let items of studentresult;let i=index">
+                            <td>{{i+1}}</td>
+                            <td>{{items.RollNo}}</td>
+                            <td>{{items.Fname}}</td>
+                            <td>{{items.Lname}}</td>
+                            <td>{{items.status}}</td>
+                            <td><button type="button" class="btn btn-primary btn-lg" [routerLink]="['/student-result']" (click)="getresult(items.Fname,items.Lname,items.RollNo,items.Java,items.JavaMarks,items.Python,items.pythonMarks,items.RDBMS,items.RdbmsMarks,items.MachinL,items.MachinMarks,items.Javascrpt,items.JavascriptMarks,items.status)"><span class="glyphicon glyphicon-eye-open"></span>Show</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6" style="text-align: right">
+                <!-- <button type="button" class="btn btn-primary"  [routerLink]="['/singup']">Back</button> -->
+                <!-- <button type="submit" class="btn Button" >Back</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

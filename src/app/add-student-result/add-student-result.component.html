@@ -1,0 +1,147 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Add Student Marks</h3>
+                        <form [formGroup]="studentResult">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="firstName">First Name:</label>
+                                        <input type="text" id="firstName" class="form-control form-control-lg"
+                                            formControlName="Fname" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="lastName">Last Name:</label>
+                                        <input type="text" id="lastName" class="form-control form-control-lg"
+                                            formControlName="Lname" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <div class="form-outline datepicker w-100">
+                                        <label for="pass" class="form-label">Subject Name:</label>
+                                        <input type="text" class="form-control form-control-lg" id="birthdayDate"
+                                            placeholder="Enter the Name" formControlName="Java" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <div class="form-outline datepicker w-100">
+                                        <label for="pass" class="form-label">Marks:</label>
+                                        <input type="text" class="form-control form-control-lg" id="birthdayDate"
+                                            placeholder="Enter the Marks" formControlName="JavaMarks" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Subject Name:</label>
+                                        <input type="text" class="form-control form-control-lg" id="birthdayDate1"
+                                            placeholder="Enter the Name" formControlName="Python" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Marks:</label>
+                                        <input type="tel" id="phoneNumber" class="form-control form-control-lg"
+                                            placeholder="Enter the Marks" formControlName="pythonMarks" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Subject Name:</label>
+                                        <input type="text" class="form-control form-control-lg" id="birthdayDate2"
+                                            placeholder="Enter the Name" formControlName="RDBMS" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Marks:</label>
+                                        <input type="tel" id="phoneNumber" class="form-control form-control-lg"
+                                            placeholder="Enter the Marks" formControlName="RdbmsMarks" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Subject Name:</label>
+                                        <input type="text" class="form-control form-control-lg" id="birthdayDate3"
+                                            placeholder="Enter the Name" formControlName="MachinL" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Marks:</label>
+                                        <input type="text"  class="form-control form-control-lg"
+                                            placeholder="Enter the Marks" formControlName="MachinMarks" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Subject Name:</label>
+                                        <input type="text" class="form-control form-control-lg" id="birthdayDate4"
+                                            placeholder="Enter the Name" formControlName="Javascrpt" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label for="pass" class="form-label">Marks:</label>
+                                        <input type="tel"  class="form-control form-control-lg"
+                                            placeholder="Enter the Marks" formControlName="JavascriptMarks" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="status">Status:</label>
+                                        <input type="text" id="status" class="form-control form-control-lg"
+                                            placeholder="Pass/Fail" formControlName="status" />
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-outline">
+                                        <label class="form-label" id="RollNo" for="RollNo">RollNo:</label>
+                                        <input type="text" class="form-control form-control-lg"
+                                            placeholder="Enter RollNo" formControlName="RollNo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class=" col-2 mt-4 pt-2">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Submit"
+                                        (click)="Add()" />
+                                </div>
+
+                                <div class=" col-2 mt-4 pt-2">
+                                    <input class="btn btn-primary btn-lg" type="submit" value="Next"
+                                        [routerLink]="['/result-download']" (click)="Next()" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

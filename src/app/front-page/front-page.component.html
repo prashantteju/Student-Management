@@ -1,0 +1,258 @@
+<nav class="navbar-custom">
+    <div class="navbar">
+        <a (click)="Home($event)">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">About Us<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a style="margin-left: 18em;" (click)="cheirman($event)">Cheirman</a>
+                <a (click)="Trustee($event)">Trustee</a>
+                <a (click)="E_Director($event)"> Exclusive Director</a>
+                <a (click)="Director($event)">Director</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Department <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+
+                <a (click)="Dcsc($event)" style="margin-left: 24em;">Computer Science And Engg</a>
+                <a (click)="MCA($event)">Master of Computer Sciencer</a>
+                <a (click)="Mech($event)">Mechanical Engg</a>
+                <a (click)="civil($event)">Civil Engg</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Training And Placement <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a (click)="TPO($event)" style="margin-left: 48em;">TPO Message</a>
+                <a (click)="PlacedStudent($event)">Placed Student</a>
+                <a (click)="Companies($event)">Our Recuiter</a>
+                <!-- <a href="#link4">Link 4</a> -->
+            </div>
+        </div>
+        <a [routerLink]="['/singup']">Login</a>
+    </div>
+</nav>
+<div class="row">
+
+</div>
+
+<div id="slider" *ngIf="isHome">
+    <figure>
+        <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2017/06/Slider-2jpg.jpg">
+        <img src="https://www.dypcoeakurdi.ac.in/images/PageImages/old_engg.jpg">
+        <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2017/06/admission.jpeg">
+        <!-- <img src="https://www.dyp-atu.org/wp-content/uploads/2021/07/1-Home-Slider1.jpg"> -->
+        <!-- <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2017/06/Slider-2jpg.jpg"> -->
+    </figure>
+</div>
+<!-- cherman about -->
+<div class="container" *ngIf="ischerman">
+    <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2020/09/Honble-Sanjay-saheb-210x300.jpg">
+    <p>This young and dynamic leader has been the prime mobiliser of Dr. D.Y. Patil Education Society and Dr. D. Y.
+        Patil Pratishthan’s Multidimensional activities since 1989. He has more than 30 educational institutions under
+        him which include a Medical college, Engineering College, Polytechnic College, Agriculture College and also a
+        number of Marathi and English medium schools.
+
+        Due to his constant dedicated efforts and meritorious work in the field of Medical Education, the Dr. D. Y.
+        Patil education society was declared Deemed to be University in September 2005 by the Govt. of India. The D. Y.
+        Patil Deemed university presently has a top class medical college, 604 bedded Hospital and College of Nursing.
+
+        The medical college has an intake capacity of 100 students every year as also 41 students are admitted every
+        year for P. G. Courses. The Hospital is fully equipped with sophisticated and latest equipments with the
+        State-of-the-art facilities. At Talasande which in 25 km from Kolhapur, he has converted 210 acres of vast land
+        into agricultur-al land and fruit orchard containing mango and coconut trees. For his outstanding performance in
+        the field of agriculture and education he has been felicitated with Vanashree Puraskar, Indira Priyadarshini
+        Vrikshmitra, Kolhapur Bushan, Krishinishta Puraskar, Vidya Bharati Award, Rashtriya Shikshan Sanman Puraskar.
+    </p>
+
+    <h4> Dr. Sanjay D.Patil Chairman</h4>
+</div>
+
+<!-- trustee About -->
+<div class="container" *ngIf="istrustee">
+    <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2020/09/Honble-Rutu-Sir.jpg" style="width: 25%">
+    <p>We believe the quality of a student is based on the early experiences in life which lays the foundation for all
+        the learning and professionalism that follows. At D.Y. Patil Technical Campus, we cherish our role to deliver
+        holistic, industry-centric and developmentally appropriate learning experiences. With a campus spread over 200
+        acres of lush green land, we have based our approach upon three pillars: quality education, quality teachers,
+        and quality Infrastructure.
+
+        Our curriculum is designed under the leadership of Hon. Dr. Sanjay D Patil and it is intended to enable students
+        to flourish academically, personally, socially and professionally. Our professors are facilitators who work in
+        partnership with the students to develop and extend thinking through careful observation, documentation,
+        thoughtful questions and deep reflections.
+
+        We started D.Y Patil Technical Campus with a vision of providing a strong education base that would create
+        creative thinkers, responsible global citizens, and life-long learners. We can proudly say that we have
+        continued to provide our students with a nurturing environment.</p>
+
+    <h4>Hon. Shri. Ruturaj Sanjay Patil</h4>
+    <h5>MLA Kolhapur South & Trustee</h5>
+</div>
+
+<!-- Exclusive director -->
+<div class="container" *ngIf="isEdr">
+    <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2018/08/gupta_new-768x507.jpg" style="width: 28%;">
+
+    <h5>Greeting...</h5>
+    <p>I believe that the existence of every educational institute will continue only if that Institute makes the
+        Student & Parent feel happy. The student & Parent will be happy only if they get their expectations fulfilled
+        for which the student has taken an admission in the institute. This can be achieved only if every entity in an
+        Institute works with their authorities executed 100% with the focus on quality. Therefore I request everyone to
+        come together in achieving the target of HAPPY STUDENT, HAPPY PARENT, and Most preferred Institute.</p>
+
+    <h4>Dr. A. K.Gupta
+        Executive Director</h4>
+</div>
+
+<!-- Director -->
+
+<div class="container" *ngIf="isdrc">
+    <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2020/07/Director-Sir-Photo.png">
+    <p>Welcome to the D.Y Patil Technical Campus of Talsande – Kolhapur, where every student counts.
+        The students are nurtured & developed into excellent corporate managers with a sound infrastructure at our D.Y.
+        Patil Technical campus, Talsande with best in class faculty, pedagogy and curriculum. We are motivated to sculpt
+        dynamic professionals from within our students by enabling them to understand the management ethos & principles
+        better and help them develop application oriented knowledge. The learning & skill development imparted to the
+        students goes beyond academics to inculcate lateral thinking and innovative approach which enables them to
+        efficiently & effectively manage themselves, their family life as well as leads to performance excellence in
+        corporate life.
+        ‘उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत l’
+        a sholka from the Katha Upanishad which motivates us to ‘Arise, awake and stop not till the goal is reached’, is
+        at the core of our collective efforts to bring the best out of each and</p>
+
+    <h5>every student.</h5>
+    <h4> Dr. Satish Pawaskar</h4>
+    <h5>Campus Directo</h5>
+</div>
+
+<!-- csc department -->
+<div class="container" *ngIf="isCsc">
+    <h3>Department of CSC :-</h3>
+    <figure class="figure">
+        <img src="https://www.dyp-atu.org/wp-content/uploads/2021/07/1-Home-Slider1.jpg" style="width: 50%;">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+
+        <p>
+            <li>The department of CSE was established in the year 2011.</li>
+            <li>The department labs are fully equipped with latest configuration, licensed software’s and Internet
+                facility.
+            </li>
+            <li>Department has experienced and dynamic faculty members.</li>
+            <li> The department is actively involved in developing the skills required for sustaining and maintaining
+                the
+                employability of students from entrepreneurship to the corporate world.</li>
+            <li> The Department is continuously striving for excellence in engineering education and research.</li>
+            <li> The Department acts as a focal point for development, growth and entrepreneurship.</li> It gives
+            exposure
+            to its students, to not only the regular Engineering curriculum but also to the aspirations of today’s
+            corporate
+            world, by inculcating a professional attitude in them.
+        </p>
+    </figure>
+</div>
+
+<!--Mechanical Department  -->
+<div class="container mt-4" *ngIf="isMech">
+    <h3>Mechanical of Department:-</h3>
+    <div class="row mb-3">
+        <div class="col">
+            <img
+                src="https://foet.dypgroup.edu.in/wp-content/uploads/photo-gallery/thumb/Mech_activity_-_Robo_race.jpg">
+        </div>
+        <div class="col">
+            <img
+                src="https://foet.dypgroup.edu.in/wp-content/uploads/photo-gallery/thumb/Mech_activity_-_Lathe_War.jpg">
+        </div>
+    </div>
+
+    <p>The Department of Mechanical Engineering was established in the year 2011 with an intake of 60 students. Due to
+        the untiring efforts of its enthusiastic, dedicated, experienced faculty and staff and with the support of the
+        management, all its stake holders inclusive of students, the society and the industry, the Department has risen
+        to be recognized as one of the most sought after courses in south Maharashtra.
+
+        The Department set its Mission, Goals and Objectives in line with the Vision and mission of the institute and to
+        a great extent has achieved them as evident from the overall development of the Department as well as all round
+        development of its major stake holders – its students.</p>
+</div>
+
+<!-- MCA Department -->
+
+<div class="container" *ngIf="isMca">
+    <figure>
+        <img src="https://www.dyp-atu.org/wp-content/uploads/2021/07/1-Home-Slider1.jpg" style="width: 70%;">
+        <h3>Department of computer aplication :-</h3>
+        <p>The Department of MCA was established in the year 2022 with an intake of 134 students. Due to
+            the untiring efforts of its enthusiastic, dedicated, experienced faculty and staff and with the support of
+            the
+            management, all its stake holders inclusive of students, the society and the industry, the Department has
+            risen
+            to be recognized as one of the most sought after courses in south Maharashtra.
+
+            The Department set its Mission, Goals and Objectives in line with the Vision and mission of the institute
+            and to
+            a great extent has achieved them as evident from the overall development of the Department as well as all
+            round
+            development of its major stake holders – its students.</p>
+    </figure>
+</div>
+
+<!-- placement And Activities -->
+
+
+<div class="container" *ngIf="isTPO">
+    <img src="https://foet.dypgroup.edu.in/wp-content/uploads/2018/11/TNP_OFFICER-229x300.jpg">
+    <h5>Mr. Sangram Methe</h5>
+    <h4>Trainning and Placement Officer</h4>
+    <p style="margin-top: 3em;">Time is changing and so we need to. The world is demanding a Work ready workforce from the Education Industry.
+        Entrepreneurship values are increasing day by day. The dual challenge for producing Industry ready workforce
+        along with good Entrepreneur is taken by the Education Industry. We strongly believe that only an education that
+        can nourish inbuilt virtues can impart true intelligence. With a strong tie-up with industry, Research Centers,
+        Learning Labs, etc we are committed to provide the world the quality of manpower required. Imparting Value
+        Education has been our Apex. We are in all sense adoptable to the world’s demand. Our Alumni base is extended in
+        all sector which makes us more confident to deliver.</p>
+
+</div>
+
+<!-- placement companies -->
+
+<div class="container" *ngIf="isPlacement">
+    <div class="row">
+        <div class="col">
+            <img src="http://foet.dypgroup.edu.in/wp-content/uploads/2018/04/Opulent-Logo-Sm-2.png">
+        </div>
+        <div class="col">
+            <img src="http://foet.dypgroup.edu.in/wp-content/uploads/2018/04/SURFMII-LOGO-1.png" style="width: 50%;">
+        </div>
+        <div class="col">
+            <img src="http://foet.dypgroup.edu.in/wp-content/uploads/2017/06/logo.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="http://foet.dypgroup.edu.in/wp-content/uploads/2017/06/dhoot_transmission_set_to_buy_uk-s_parkinson_harness_51347.jpg">
+        </div>
+        <div class="col mt-3">
+            <img src="http://foet.dypgroup.edu.in/wp-content/uploads/2017/06/image.png" style="width:100%">
+        </div>
+        <div class="col mt-3">
+            <img src="http://foet.dypgroup.edu.in/wp-content/uploads/2018/02/Syntel.jpg" style="width:100%">
+        </div>
+    </div>
+</div>
+<!-- Footer dyp -->
+<div class="menu-footer-menu-container">
+    <div class="card">
+        <div class="card-body text-center">
+
+            <img src="http://coek.dypgroup.edu.in/wp-content/uploads/2017/06/footer-logo-1.png">
+            <hr class="hr mt-2">
+            <div class="row text">
+                <li>Approved by AICTE, DTE -Govt. of Maharashtra & Affiliated to Shivaji University</li>
+                <li>© 2018 DYP Group. Proudly created by D Y Patil Group Kolhapur</li>
+                <li>Last Updated on: December 16, 2022</li>
+            </div>
+        </div>
+
+    </div>
+</div>

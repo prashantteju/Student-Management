@@ -1,0 +1,74 @@
+h5 {
+    font-weight: bold;
+    color: #3155a6;
+    font-size: medium;
+    margin-top: 1.3020833333333333vw;
+  }
+  
+  .fa-edit {
+    color: #3155a6;
+    cursor: pointer;
+  }
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
+  
+  .custom-lookup {
+    width: 8vw;
+  }
+  
+  .tb-grey {
+    background-color: #eeeeee;;
+  }
+  
+  .td-white{
+    background-color: white;
+}
+  
+  .blue {
+    color: #1e58df;
+    font-size: 0.94vw;
+  }
+  
+  .red {
+    color: #ED1C24;
+    font-size: 0.94vw;
+  }
+  .new{
+    width: 4vw;
+    height: 1.5vw;
+    margin-top: 0.2vw;
+  }
+  .badge-danger{
+    background-color: #ED1C24;
+    width: 5.5vw;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-15)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-product-sans);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal normal 0.78125vw Product Sans;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 0.78125vw;
+  }
+  #flexSwitchCheckChecked{
+    font-size: 1.2vw;
+      margin-left: -2vw;
+  }
+  .card{
+    background-color:#FFFFFF;
+    box-shadow: #212529;
+  }
+  .submit{
+    background-color:  #3155a6;
+    color: white;
+  }
+  .container{
+    background-color: whitesmoke;
+  }
+  /* .btn{
+    background-color: #3155a6;
+  color: white;
+  } */

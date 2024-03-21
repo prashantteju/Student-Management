@@ -1,0 +1,71 @@
+<!-- <div #contentToConvert> -->
+<app-header></app-header>
+<div class="container">
+    <div class="mt-2 mb-4">
+        <hr class="hr">
+        <div class="card ">
+            <div class="card-body" align="center">
+                <form [formGroup]="studentUser">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr class="tb-white">
+                                <th>Id</th>
+                                <th>Username</th>
+                                <th>Password</th>
+                                <th>Repassword</th>
+                                <th>Email_Id</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="tb-grey">
+                                <th scope="row"></th>
+                                <td><input type="text" class="form-control" formControlName="Username"
+                                        [(ngModel)]="Username1"></td>
+                                <td><input type="text" class="form-control" formControlName="Password"
+                                        [(ngModel)]="Password1"></td>
+                                <td><input type="text" class="form-control" formControlName="Repassword"
+                                        [(ngModel)]="Repassword1"></td>
+                                <td> <input type="text" class="form-control" formControlName="Email"
+                                        [(ngModel)]="Email1"></td>
+
+                                <td><button type="submit" value="Submit" class="btn btn-success"
+                                        (click)="Update()">Update</button></td>
+                                <td><button type="submit" value="Clear" class="btn btn-danger"
+                                        (click)="clear()">Clear</button></td>
+                            </tr>
+
+                            <tr class="tb-grey" *ngFor="let items of userdata;let i=index">
+                                <td>{{i+1}}</td>
+                                <td>{{items.Username}}</td>
+                                <td>{{items.Password}}</td>
+                                <td>{{items.Repassword}}</td>
+                                <td>{{items.Email}}</td>
+                                <td> <a class="table-row-action edit-action"
+                                        (click)="isEdit(i,items.Username,items.id)">
+                                        <i class="fas fa-1x fa-edit mt-2"></i>
+                                    </a></td>
+                                <td>
+                                    <button type="button" class="btn btn-primary"
+                                        (click)="remodata(items.id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="col-6" style="text-align: right">
+
+                <button class="submit " mat-raised-button color="primary"
+                    [routerLink]="['/singup']">Back</button>&nbsp;&nbsp;
+                <!-- <button type="button" class="btn btn-primary" [routerLink]="['/singup']">Back</button> -->
+                <button class="submit" mat-raised-button color="primary" [routerLink]="['/newstudent']">Next</button>
+                <!-- <button type="submit" class="btn Button" >Back</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer style="text-align:right"></app-footer>
+<!-- </div> -->
+<!-- <button (click)="generatePdf(contentToConvert)">Generate PDF</button> -->

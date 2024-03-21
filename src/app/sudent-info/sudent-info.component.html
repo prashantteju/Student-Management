@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="container">
+    <div class="mt-2 mb-4">
+        <hr class="hr">
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr class="tb-white">
+                            <th>SrNo</th>
+                            <th>RollNo</th>
+                            <th>FirstName</th>
+                            <th>MiddleName</th>
+                            <th>LastName</th>
+                            <th>Cource</th>
+                            <th>Email_Id</th>
+                            <th>fees</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tb-grey" *ngFor="let items of studentinfo;let i=index">
+                            <td>{{i+1}}</td>
+                            <td>{{1}}</td>
+                            <td>{{items.FirstName}}</td>
+                            <td>{{items.LastName}}</td>
+                            <td>{{items.MiddleName}}</td>
+                            <td>{{9}}</td>
+                            <td>{{items.Pemail}}</td>
+                            <td>{{items.Fees}}</td>
+                            <td><button type="button" class="btn Button"  (click)="getstudent(items.FirstName,items.LastName,items.MiddleName,items.Pemail,items.Fees,items.Pcontact,items.Gender,items.Pincode,items.Date,items.state,items.Address1,items.RollNo)"><span class="glyphicon glyphicon-eye-open"></span>Show</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6" style="text-align: right">
+                <!-- <button type="button" class="btn btn-primary"  [routerLink]="['/singup']">Back</button> -->
+                <!-- <button type="submit" class="btn Button" >Back</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
